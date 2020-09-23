@@ -1,0 +1,67 @@
+--------------------------------PostgresSQL-----------------------------------------------
+
+
+-> PostgresSQL is a powerful oject-relational database managment (ORDBMS).
+
+->relational DBMS : A relational database is a  database that allows related data to be stored across multiple tables, 
+                    and linked by establishing a relationship between the tables.
+                    This provides an efficient way to store data, 
+                    as you can enter data once, then reference it from elsewhere in the database.
+
+---------------------------------------Database--------------------------------------------- 
+##Same as MySql##
+Create Database : create database "DATABASE NAME";
+	      ex: create database Test;
+
+
+To Swich/Connect to other Database : "\c Test;", where c stands for connect.
+
+Delete Database : "drop database Test;"------------>For Exit froom Shell :- "\q"
+
+---------------------------------------Table-----------------------------------------------
+
+Create Table : "create table test1(id integer not null primary key, fname text not null);" 
+
+for check table : "\d", where d stands for describe.
+
+Delete table : "drop table test1;"
+
+--------------------------------------Schema----------------------------------------------
+
+Schema : It is a collection of group of Tabels.
+
+create schema : create schema "schemaName";
+
+delete schema : drop schema "schemaName";
+
+-----------------------------Insert into table Query-------------------------------------
+
+Insert Data into table : "insert into table(id,name) values(1,'stupid');tabke
+     
+With direct value : "insert into table value(2,'chicken');"
+
+Mutiple values at once : "insert into table value(3,'durdanta'),(4,'debnath');"
+
+----------------------------------Select Query---------------------------------------------
+
+Select Query : "select * from tabel;"
+
+Select Query for required Filed : "select id,name from test1;"
+
+select Query for all field  : "Select * form test1
+
+----------------------------------Where Clause ---------------------------------------------
+
+Where Query : "select * from test1 where id =2;"
+
+Using Operator & multiple condition : "select * from tabel test1 where age>=20 AND name='chicken';"
+
+---------------------------------Update Query--------------------------------------------------
+
+Update Query : "update tableName set name='lol' where id = 3;"
+
+Update Single Raw : "update tableName set name='llol1',age=19 where id=4;
+
+----------------------------------Drop/Delet Query----------------------------------------------
+
+Delet Query : "delet tableName where id = 1;"
